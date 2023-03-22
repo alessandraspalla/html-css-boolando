@@ -1,0 +1,120 @@
+/* regole generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header, footer {
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header */
+header {
+    height: 50px;
+    width: 100%;
+    background-color: #ff6900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header .flex {
+    align-items: center;
+    height: 50px;
+}
+
+.logo img{
+    height: 30px;
+}
+
+/* row style */
+main .container:first-child {
+    margin-top: 100px;
+}
+
+.row.flex {
+    gap: 10px;
+}
+
+/* article style */
+article {
+    width: calc(100% / 3);
+    position: relative;
+}
+
+article img {
+    width: 100%;
+}
+
+
+/* heart style */
+.heart {
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 34px;
+    line-height: 17px;
+}
+
+/* label style */
+.label {
+    padding: 5px;
+    color: white;
+}
+
+.label.sale {
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.label.green {
+    background-color: green;
+    position: absolute;
+    left: 50px;
+    bottom: 20px;   
+}
+
+
+/* text style */
+.text {
+    width: calc(100%/3);
+}
+
+.black {
+    font-size: 13px;
+}
+
+.black.price {
+    text-decoration: line-through;
+}
+
+.red {
+    color: red;
+    font-size: 13px;
+}
+
+
+/* DEBUG */
