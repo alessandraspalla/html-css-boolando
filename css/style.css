@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
@@ -22,6 +23,32 @@ header, footer {
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+/* regole status hover */
+
+.heart:hover {
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+i:hover, .logo:hover, article:hover {
+    cursor: pointer;
+}
+
+article:hover .photo {
+    display: block;
+}
+
+/* photo style */
+.photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
 }
 
 /* header */
@@ -47,6 +74,10 @@ header .flex {
 /* row style */
 main .container:first-child {
     margin-top: 100px;
+}
+
+.row.flex.second {
+    margin-bottom: 50px;
 }
 
 .row.flex {
@@ -81,6 +112,7 @@ article img {
 .label {
     padding: 5px;
     color: white;
+    font-size: 14px;
 }
 
 .label.sale {
@@ -97,13 +129,16 @@ article img {
     bottom: 20px;   
 }
 
+.label.green.left {
+    left: 0;
+}
 
 /* text style */
 .text {
     width: calc(100%/3);
 }
 
-.black {
+.black, .red {
     font-size: 13px;
 }
 
@@ -113,8 +148,34 @@ article img {
 
 .red {
     color: red;
-    font-size: 13px;
 }
 
 
-/* DEBUG */
+/* footer style */
+footer .flex {
+    align-items: center;
+    height: 80px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    height: 80px;
+    line-height: 140%;
+}
+
+.informazioni a {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.collegamenti {
+    text-align: center;
+}
+
+.collegamenti strong {
+    font-size: 14px;
+}
+
+.collegamenti .fa-brands {
+    margin: 3px;
+}
